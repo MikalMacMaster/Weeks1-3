@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
+    public float speed;
     public float duration;
     float progress = 0f;
 

@@ -20,5 +20,10 @@ public class Pulser : MonoBehaviour
     {
         progress += Time.deltaTime;
         transform.localScale = curve.Evaluate(progress / duration) * Vector3.one;
+
+        if (progress > duration)
+        {
+            progress = 0f;
+        }
     }
 }

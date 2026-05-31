@@ -20,13 +20,13 @@ public class Fish : MonoBehaviour
         if (transform.position.x >= rightEdge)
         {
             direction = -1;
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
         if (transform.position.x <= leftEdge)
         {
             direction = 1;
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 }

@@ -882,7 +882,7 @@ Transform:
   m_GameObject: {fileID: 291568564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.99, y: -3.23, z: 0}
+  m_LocalPosition: {x: 3.26, y: -3.23, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1144,7 +1144,7 @@ Transform:
   m_GameObject: {fileID: 477787064}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 0.62, z: 0}
+  m_LocalPosition: {x: 6.21, y: 0.62, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1676,7 +1676,7 @@ Transform:
   m_GameObject: {fileID: 732045912}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 1.34, z: 0}
+  m_LocalPosition: {x: 5.7, y: 1.34, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2237,7 +2237,7 @@ Transform:
   m_GameObject: {fileID: 829312218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.48, y: -2.55, z: 0}
+  m_LocalPosition: {x: -4.05, y: -2.55, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2269,6 +2269,7 @@ GameObject:
   - component: {fileID: 868034987}
   - component: {fileID: 868034986}
   - component: {fileID: 868034985}
+  - component: {fileID: 868034988}
   m_Layer: 0
   m_Name: Crab - Dungeness_0
   m_TagString: Untagged
@@ -2283,7 +2284,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868034984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c5eff990f6f00f49a76d8c2681bcff5, type: 3}
   m_Name: 
@@ -2359,12 +2360,29 @@ Transform:
   m_GameObject: {fileID: 868034984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.55, z: 0}
+  m_LocalPosition: {x: -4.61, y: -4.55, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868034988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868034984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8be0dc7c9fe04469efa1a8407760de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crab
+  speed: 1
+  leftEdge: -8
+  rightEdge: 8
+  shuffleAmount: 1
+  shuffleSpeed: 2
 --- !u!1 &989126833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,6 +3270,7 @@ GameObject:
   - component: {fileID: 1367712381}
   - component: {fileID: 1367712380}
   - component: {fileID: 1367712379}
+  - component: {fileID: 1367712382}
   m_Layer: 0
   m_Name: Crab - Dungeness_0 (1)
   m_TagString: Untagged
@@ -3266,7 +3285,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367712378}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c5eff990f6f00f49a76d8c2681bcff5, type: 3}
   m_Name: 
@@ -3348,6 +3367,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1367712382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367712378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8be0dc7c9fe04469efa1a8407760de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crab
+  speed: 1
+  leftEdge: -8
+  rightEdge: 8
+  shuffleAmount: 1
+  shuffleSpeed: 2
 --- !u!1 &1430057998
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,7 +3568,7 @@ Transform:
   m_GameObject: {fileID: 1448529753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.09, y: 1.34, z: 0}
+  m_LocalPosition: {x: 6.95, y: 1.34, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3623,6 +3659,7 @@ GameObject:
   - component: {fileID: 1550179276}
   - component: {fileID: 1550179275}
   - component: {fileID: 1550179274}
+  - component: {fileID: 1550179277}
   m_Layer: 0
   m_Name: Crab - Dungeness_0 (2)
   m_TagString: Untagged
@@ -3637,7 +3674,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550179273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c5eff990f6f00f49a76d8c2681bcff5, type: 3}
   m_Name: 
@@ -3713,12 +3750,29 @@ Transform:
   m_GameObject: {fileID: 1550179273}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.52, y: -4.67, z: 0}
+  m_LocalPosition: {x: 6.87, y: -4.67, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1550179277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550179273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8be0dc7c9fe04469efa1a8407760de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crab
+  speed: 1
+  leftEdge: -8
+  rightEdge: 8
+  shuffleAmount: 1
+  shuffleSpeed: 2
 --- !u!1 &1741664230
 GameObject:
   m_ObjectHideFlags: 0
